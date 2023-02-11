@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.button {
+  all: initial;
+  cursor: pointer;
+  user-select: none;
+  padding-block: .3em;
+  padding-inline: .7em;
+  border: .2em solid #555;
+  border-radius: 99em;
+  font: 1.2em sans-serif;
+  color: white;
+  transition: border 75ms ease-in;
+}
+
+.button:hover {
+  border-color: #aaa;
+}
+
+.button:active {
+  border-color: white;
+}
+
+.selector {
+  display: flex;
+  gap: .3em;
+  font: 1.5em sans-serif;
+  color: white;
+}
+
+.selector label {
+  display: block;
+  padding-inline: .5em;
+  padding-block: .1em;
+  border-radius: .3em;
+  cursor: pointer;
+}
+
+.selector input:checked+label {
+  background-color: #555;
+}
+
+.selector input {
+  display: none;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+}
